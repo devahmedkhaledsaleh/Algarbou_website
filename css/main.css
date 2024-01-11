@@ -55,7 +55,7 @@ a {
 
 .section-title .text {
   font-weight: 700;
-  font-size: 42px;
+  font-size: 25px;
   margin-right: 20px;
 }
 
@@ -119,7 +119,7 @@ a {
   display: inline-block;
   position: absolute;
   right: 0;
-  bottom: 30px;
+  bottom: 40px;
   z-index: -1;
 }
 
