@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1.7;
+}
+
+:root {
+  --main-color: #987a54;
+  --secondary-color: #ddd9d4;
+}
+
+body {
+  background-color: #1c1b1b;
+  color: var(--secondary-color);
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Start Global */
+
+.main-button {
+  padding: 15px 22px;
+  font-size: 24px;
+  font-weight: 700;
+  border-radius: 56px;
+  background-color: var(--main-color);
+  border: none;
+  color: var(--secondary-color);
+}
+
+.secondary-button {
+  border: 2px solid #987a54;
+  color: #987a54;
+  padding: 13px 18px;
+  border-radius: 58px;
+  background-color: transparent;
+}
+
+.card {
+  background-color: #32302d;
+  color: white;
+}
+
+.main-heading {
+  color: var(--main-color);
+}
+
+/* End Global */
+
+/* Start Section Landing */
+
+.landing {
+  background: linear-gradient(rgba(0, 0, 0, 0.6) 0% 100%),
+    url(../images/main_background.png);
+  background-position: center center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.landing .intro {
+  padding-top: 212px;
+}
+
+.landing .intro .welcome {
+  position: relative;
+  display: flex;
+  color: var(--main-color);
+}
+
+.landing .intro .welcome::before {
+  content: url("../icons/quoteOne.svg");
+  align-self: flex-end;
+}
+
+.landing .intro .welcome::after {
+  content: url("../icons/quoteTwo.svg");
+}
+
+.landing .intro .platform {
+  position: relative;
+}
+
+.landing .intro .platform::before {
+  content: "";
+  width: 34px;
+  height: 1px;
+  display: inline-block;
+  background-color: var(--secondary-color);
+  margin-left: 15px;
+}
+
+.landing .intro .platform::after {
+  content: "";
+  width: 34px;
+  height: 1px;
+  display: inline-block;
+  background-color: var(--secondary-color);
+  margin-right: 15px;
+}
+
+
+
+/* Satrt Section Articles */
+
+.articles .main-article .card .card-body .card-text,
+.articles .normal-article .card .card-body .card-text {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  font-size: 14px;
+}
+
+.articles .normal-article img {
+  object-fit: fill;
+  height: 100%;
+}
+
+/* End Section Articles */

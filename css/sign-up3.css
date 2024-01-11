@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  :root {
+    --foreground-rgb: #1c1b1b;
+    --main-color: #987a54;
+    --secondary-color: #ddd9d4;
+  }
+  
+  body {
+    color: var(--secondary-color);
+    background: var(--foreground-rgb);
+    font-family: "Almarai";
+    font-size: 14px;
+  }
+  
+  /* Start Section Sign In */
+  
+  .reset-password2 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  
+  .reset-password2 .card {
+    width: 450px;
+    margin: auto;
+    padding: 50px;
+  }
+  
+  @media (max-width: 991px) {
+    .reset-password2 .card {
+      width: 350px;
+    }
+  }
+  
+  .reset-password2 .card .title {
+    font-weight: 700;
+    font-size: 36px;
+  }
+  
+  @media (max-width: 991px) {
+    .reset-password2 .card .title {
+      font-size: 26px;
+    }
+  }
+  
+  .reset-password2 .card .form input {
+    width: 60px;
+    height: 80px;
+    border: 1.5px solid #b1adad;
+    border-radius: 8px;
+    font-size: 40px;
+    color: #000;
+    text-align: center;
+  }
+  
+  .reset-password2 .card .form input:focus {
+    box-shadow: none;
+  }
+  
+  .reset-password2 .card .form input::placeholder {
+    font-size: 40px;
+    color: #616161;
+    text-align: center;
+  }
+  
+  .reset-password2 .card .form .login {
+    background-color: #987a54;
+    color: #fff;
+  }
+  
+  .reset-password2 .card .register span {
+    color: #878787;
+  }
+  
+  .reset-password2 .card .register a {
+    color: #987a54;
+    margin-right: 5px;
+  }
+  
+  /* End Section Sign In */
+  

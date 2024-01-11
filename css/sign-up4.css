@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --foreground-rgb: #1c1b1b;
+  --main-color: #987a54;
+  --secondary-color: #ddd9d4;
+}
+
+body {
+  color: var(--secondary-color);
+  background: var(--foreground-rgb);
+  font-family: "Almarai";
+  font-size: 14px;
+}
+
+/* Start Section Sign In */
+
+.sing-up4 {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.sing-up4 .card {
+  width: 450px;
+  margin: auto;
+  padding: 50px;
+}
+
+@media (max-width: 991px) {
+  .sing-up4 .card {
+    width: 350px;
+  }
+}
+
+.sing-up4 .card .title {
+  font-weight: 700;
+  font-size: 36px;
+}
+
+@media (max-width: 991px) {
+  .sing-up4 .card .title {
+    font-size: 26px;
+  }
+}
+
+.sing-up4 .card .hint {
+  color: #987a54;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.sing-up4 .card .hint img {
+  width: 104px;
+}
+
+.sing-up4 .card .login {
+  background-color: #987a54;
+  color: #fff;
+}
+
+/* End Section Sign In */

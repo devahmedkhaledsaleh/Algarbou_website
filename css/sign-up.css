@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --foreground-rgb: #1c1b1b;
+  --main-color: #987a54;
+  --secondary-color: #ddd9d4;
+}
+
+body {
+  color: var(--secondary-color);
+  background: var(--foreground-rgb);
+  font-family: "Almarai";
+  font-size: 14px;
+}
+
+/* Start Section Sign In */
+
+.sign-up {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.sign-up .card {
+  width: 450px;
+  margin: auto;
+  padding: 50px;
+}
+
+@media (max-width: 991px) {
+  .sign-up .card {
+    width: 350px;
+  }
+}
+
+.sign-up .card .title {
+  font-weight: 700;
+  font-size: 36px;
+}
+
+@media (max-width: 991px) {
+  .sign-up .card .title {
+    font-size: 26px;
+  }
+}
+
+.sign-up .card .hint {
+  color: #878787;
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 20px;
+}
+.sign-up .card .hint a {
+  color: #987a54;
+}
+
+.sign-up .card .buttons a {
+  border: none;
+}
+
+.sign-up .card .buttons .facebook {
+  background-color: #1877f2;
+}
+
+.sign-up .card .buttons .google {
+  background-color: #e9e9e9;
+  color: #000000;
+}
+
+.sign-up .card .buttons .sms {
+  background-color: #987a54;
+}
+
+.sign-up .card .buttons .apple {
+  background-color: #000000;
+}
+
+.sign-up .card .register span {
+  color: #878787;
+}
+
+.sign-up .card .register a {
+  color: #987a54;
+  margin-right: 5px;
+}
+
+/* End Section Sign In */

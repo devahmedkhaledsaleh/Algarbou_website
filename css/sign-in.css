@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --foreground-rgb: #1c1b1b;
+  --main-color: #987a54;
+  --secondary-color: #ddd9d4;
+}
+
+body {
+  color: var(--secondary-color);
+  background: var(--foreground-rgb);
+  font-family: "Almarai";
+  font-size: 14px;
+}
+
+/* Start Section Sign In */
+
+.sign-in {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.sign-in .card {
+  width: 450px;
+  margin: auto;
+  padding: 50px;
+}
+
+@media (max-width: 991px) {
+  .sign-in .card {
+    width: 350px;
+  }
+}
+
+.sign-in .card .title {
+  font-weight: 700;
+  font-size: 36px;
+}
+
+@media (max-width: 991px) {
+  .sign-in .card .title {
+    font-size: 26px;
+  }
+}
+
+.sign-in .card .hint {
+  color: #878787;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.sign-in .card .form input {
+  border-color: #b1adad;
+}
+
+.sign-in .card .form input:focus {
+  box-shadow: none;
+}
+
+.sign-in .card .form input::placeholder {
+  color: #878787;
+}
+
+.sign-in .card .form .forget-password {
+  color: #878787;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.sign-in .card .form .login {
+  background-color: #987a54;
+  color: #fff;
+}
+
+.sign-in .card .register span {
+  color: #878787;
+}
+
+.sign-in .card .register a {
+  color: #987a54;
+  margin-right: 5px;
+}
+.platform {
+  position: relative;
+  color: #878787;
+}
+
+.platform::before {
+  content: "";
+  width: 90px;
+  height: 1px;
+  display: inline-block;
+  background-color: #878787;
+  margin-left: 15px;
+}
+
+.platform::after {
+  content: "";
+  width: 90px;
+  height: 1px;
+  display: inline-block;
+  background-color: #878787;
+  margin-right: 15px;
+}
+
+@media (max-width: 991px) {
+  .platform::before,
+  .platform::after {
+    width: 40px;
+  }
+}
+/* End Section Sign In */

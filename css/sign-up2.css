@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --foreground-rgb: #1c1b1b;
+  --main-color: #987a54;
+  --secondary-color: #ddd9d4;
+}
+
+body {
+  color: var(--secondary-color);
+  background: var(--foreground-rgb);
+  font-family: "Almarai";
+  font-size: 14px;
+}
+
+/* Start Section Sign In */
+
+.sign-up2 {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.sign-up2 .card {
+  width: 900px;
+  margin: auto;
+  padding: 50px;
+}
+
+@media (max-width: 991px) {
+  .sign-up2 .card {
+    width: 350px;
+  }
+}
+
+.sign-up2 .card .title {
+  font-weight: 700;
+  font-size: 36px;
+}
+
+@media (max-width: 991px) {
+  .sign-up2 .card .title {
+    font-size: 26px;
+  }
+}
+
+.sign-up2 .card .form input {
+  border-color: #b1adad;
+}
+
+.sign-up2 .card .form input:focus {
+  box-shadow: none;
+}
+
+.sign-up2 .card .form input::placeholder {
+  color: #878787;
+}
+
+.sign-up2 .card .rules li {
+  list-style-image: url("../icons/uncorrect.svg");
+  margin-bottom: 20px;
+  color: #878787;
+}
+
+.sign-up2 .card .rules li:first-of-type,
+.sign-up2 .card .rules li:nth-of-type(3) {
+  list-style-image: url("../icons/correct.svg");
+}
+
+.sign-up2 .card .form .login {
+  background-color: #987a54;
+  color: #fff;
+}
+
+.sign-up2 .card .register span {
+  color: #878787;
+}
+
+.sign-up2 .card .register a {
+  color: #987a54;
+  margin-right: 5px;
+}
+
+/* End Section Sign In */

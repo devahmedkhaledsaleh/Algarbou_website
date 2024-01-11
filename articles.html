@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Algarbou</title>
+    <link rel="stylesheet" href="css/bootstrap.rtl.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/articles.css" />
+  </head>
+  <body>
+    <!-- Start Section Header -->
+    <section class="header position-absolute w-100">
+      <!-- Start Section Top bar -->
+
+      <section class="top-bar py-3">
+        <div class="container">
+          <div class="d-flex align-items-center justify-content-end flex-wrap">
+            <div class="lang">
+              <img src="icons/language-circle.svg" alt="" />
+              <select>
+                <option selected>العربية</option>
+                <option value="1">En</option>
+              </select>
+            </div>
+            <div class="login ms-3">
+              <img src="icons/profile-circle.svg" alt="" />
+              <span>تسجيل الدخول</span>
+              <img src="icons/arrow-down.svg" alt="" />
+            </div>
+            <div class="contact ms-5">
+              <button class="secondary-button py-1 px-3">تواصل معى</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- End Section Top bar -->
+
+      <hr />
+
+      <!-- Start section Navbar -->
+
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="icons/Logo.svg" alt="" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >الرئيسية</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">ادارة الأعمال</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">المقالات</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">الصور</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">الفيديوهات</a>
+              </li>
+            </ul>
+            <form class="d-flex search position-relative" role="search">
+              <img
+                src="icons/search.svg"
+                class="position-absolute search-icon"
+              />
+              <input
+                class="form-control me-2 rounded-5"
+                type="search"
+                placeholder="البحث عن المقالات"
+                aria-label="Search"
+              />
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <!-- End Section Navbar -->
+    </section>
+    <!-- End Section Header -->
+
+    <!-- Start Section Landing -->
+
+    <section class="landing d-flex align-items-center text-center">
+      <div class="container">
+        <div class="intro w-75 m-auto">
+          <div class="welcome justify-content-center">
+            <h3>مرحبا بك</h3>
+          </div>
+          <div class="platform">فى منصة محمد الجربوع</div>
+          <h1 class="my-4">المقالات</h1>
+          <p>
+            نقدم لك عبر موقعنا الإلكتروني مصدرًا شاملاً ومتخصصًا لتحسين مهاراتك
+            ومعرفتك في مجال إدارة الأعمال. سنوفر لك أدوات وموارد قوية لتحسين
+            أداء مشروعك وتحقيق أهدافك الريادية. كل ما عليك فقط هو البدء باستخدام
+            مساعدنا الذكى الذي سيوفر عليك الوقت ويدُلك إلى الخطوات الصحيحة التى
+            يجب أن تتبعها
+          </p>
+          <button class="secondary-button my-4 py-1 px-3">تواصل معنا</button>
+          <ul class="socials list-unstyled d-flex gap-2 justify-content-center">
+            <li class="social d-flex justify-content-center align-items-center">
+              <a href="#" class="text-white"
+                ><i class="fa-brands fa-facebook-f"></i
+              ></a>
+            </li>
+            <li class="social d-flex justify-content-center align-items-center">
+              <a href="#" class="text-white"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+            </li>
+            <li class="social d-flex justify-content-center align-items-center">
+              <a href="#" class="text-white"
+                ><i class="fa-brands fa-linkedin-in"></i
+              ></a>
+            </li>
+            <li class="social d-flex justify-content-center align-items-center">
+              <a href="#" class="text-white"
+                ><i class="fa-brands fa-behance"></i
+              ></a>
+            </li>
+            <li class="social d-flex justify-content-center align-items-center">
+              <a href="#" class="text-white"
+                ><i class="fa-brands fa-youtube"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- End Section Landing -->
+
+    <!-- Start section Articles -->
+
+    <section class="articles mb-5">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center">
+          <h4 class="my-4 main-heading">اهم المقالات</h4>
+          <div>
+            <a style="color: var(--main-color)" href="#">شاهد المزيد</a>
+            <img src="icons/showMore.svg" />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="main-article">
+              <div class="card">
+                <img
+                  src="images/article_1.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <p style="font-size: 12px">
+                    <img src="icons/Star.svg" class="img-fluid" />
+                    تجارة اكسسوارات الجوالات
+                  </p>
+                  <h4 class="card-title">كيف تبدع فى مجالك 2</h4>
+                  <p class="card-text">
+                    هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم
+                    توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل
+                    هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد
+                    الحروف التى يولدها التطبيق.
+                  </p>
+                  <p style="font-size: 12px">10 نوفمبر، 2024</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="normal-article">
+              <div class="card mb-3">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img
+                      src="images/article_2.png"
+                      class="img-fluid rounded-start"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body py-3">
+                      <p style="font-size: 12px">
+                        <img src="icons/Star.svg" class="img-fluid" />
+                        تجارة اكسسوارات الجوالات
+                      </p>
+                      <h5 class="card-title">كيف تبدع فى مجالك 2</h5>
+                      <p class="card-text">
+                        هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد
+                        تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد
+                        مثل
+                      </p>
+                      <p style="font-size: 12px" class="mb-0">
+                        10 نوفمبر، 2024
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="normal-article">
+              <div class="card mb-3">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img
+                      src="images/article_2.png"
+                      class="img-fluid rounded-start"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body py-3">
+                      <p style="font-size: 12px">
+                        <img src="icons/Star.svg" class="img-fluid" />
+                        تجارة اكسسوارات الجوالات
+                      </p>
+                      <h5 class="card-title">كيف تبدع فى مجالك 2</h5>
+                      <p class="card-text">
+                        هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد
+                        تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد
+                        مثل
+                      </p>
+                      <p style="font-size: 12px" class="mb-0">
+                        10 نوفمبر، 2024
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="normal-article">
+              <div class="card mb-3">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img
+                      src="images/article_2.png"
+                      class="img-fluid rounded-start"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body py-3">
+                      <p style="font-size: 12px">
+                        <img src="icons/Star.svg" class="img-fluid" />
+                        تجارة اكسسوارات الجوالات
+                      </p>
+                      <h5 class="card-title">كيف تبدع فى مجالك 2</h5>
+                      <p class="card-text">
+                        هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد
+                        تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد
+                        مثل
+                      </p>
+                      <p style="font-size: 12px" class="mb-0">
+                        10 نوفمبر، 2024
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-5">
+          <hr />
+        </div>
+      </div>
+    </section>
+
+    <!-- End Section Articles -->
+
+    <!-- Start section Articles -->
+
+    <section class="articles mb-5">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center">
+          <h4 class="my-4 main-heading">اهم المقالات</h4>
+          <div>
+            <a style="color: var(--main-color)" href="#">شاهد المزيد</a>
+            <img src="icons/showMore.svg" />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="main-article">
+              <div class="card">
+                <img
+                  src="images/article_1.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <p style="font-size: 12px">
+                    <img src="icons/Star.svg" class="img-fluid" />
+                    تجارة اكسسوارات الجوالات
+                  </p>
+                  <h4 class="card-title">كيف تبدع فى مجالك 2</h4>
+                  <p class="card-text">
+                    هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم
+                    توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل
+                    هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد
+                    الحروف التى يولدها التطبيق.
+                  </p>
+                  <p style="font-size: 12px">10 نوفمبر، 2024</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="normal-article">
+              <div class="card mb-3">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img
+                      src="images/article_2.png"
+                      class="img-fluid rounded-start"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body py-3">
+                      <p style="font-size: 12px">
+                        <img src="icons/Star.svg" class="img-fluid" />
+                        تجارة اكسسوارات الجوالات
+                      </p>
+                      <h5 class="card-title">كيف تبدع فى مجالك 2</h5>
+                      <p class="card-text">
+                        هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد
+                        تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد
+                        مثل
+                      </p>
+                      <p style="font-size: 12px" class="mb-0">
+                        10 نوفمبر، 2024
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="normal-article">
+              <div class="card mb-3">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img
+                      src="images/article_2.png"
+                      class="img-fluid rounded-start"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body py-3">
+                      <p style="font-size: 12px">
+                        <img src="icons/Star.svg" class="img-fluid" />
+                        تجارة اكسسوارات الجوالات
+                      </p>
+                      <h5 class="card-title">كيف تبدع فى مجالك 2</h5>
+                      <p class="card-text">
+                        هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد
+                        تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد
+                        مثل
+                      </p>
+                      <p style="font-size: 12px" class="mb-0">
+                        10 نوفمبر، 2024
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="normal-article">
+              <div class="card mb-3">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img
+                      src="images/article_2.png"
+                      class="img-fluid rounded-start"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body py-3">
+                      <p style="font-size: 12px">
+                        <img src="icons/Star.svg" class="img-fluid" />
+                        تجارة اكسسوارات الجوالات
+                      </p>
+                      <h5 class="card-title">كيف تبدع فى مجالك 2</h5>
+                      <p class="card-text">
+                        هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد
+                        تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد
+                        مثل
+                      </p>
+                      <p style="font-size: 12px" class="mb-0">
+                        10 نوفمبر، 2024
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-5">
+          <hr />
+        </div>
+      </div>
+    </section>
+
+    <!-- End Section Articles -->
+
+    <!-- Start section Articles -->
+
+    <section class="articles mb-5">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center">
+          <h4 class="my-4 main-heading">اهم المقالات</h4>
+          <div>
+            <a style="color: var(--main-color)" href="#">شاهد المزيد</a>
+            <img src="icons/showMore.svg" />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="main-article">
+              <div class="card">
+                <img
+                  src="images/article_1.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <p style="font-size: 12px">
+                    <img src="icons/Star.svg" class="img-fluid" />
+                    تجارة اكسسوارات الجوالات
+                  </p>
+                  <h4 class="card-title">كيف تبدع فى مجالك 2</h4>
+                  <p class="card-text">
+                    هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم
+                    توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل
+                    هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد
+                    الحروف التى يولدها التطبيق.
+                  </p>
+                  <p style="font-size: 12px">10 نوفمبر، 2024</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="normal-article">
+              <div class="card mb-3">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img
+                      src="images/article_2.png"
+                      class="img-fluid rounded-start"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body py-3">
+                      <p style="font-size: 12px">
+                        <img src="icons/Star.svg" class="img-fluid" />
+                        تجارة اكسسوارات الجوالات
+                      </p>
+                      <h5 class="card-title">كيف تبدع فى مجالك 2</h5>
+                      <p class="card-text">
+                        هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد
+                        تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد
+                        مثل
+                      </p>
+                      <p style="font-size: 12px" class="mb-0">
+                        10 نوفمبر، 2024
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="normal-article">
+              <div class="card mb-3">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img
+                      src="images/article_2.png"
+                      class="img-fluid rounded-start"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body py-3">
+                      <p style="font-size: 12px">
+                        <img src="icons/Star.svg" class="img-fluid" />
+                        تجارة اكسسوارات الجوالات
+                      </p>
+                      <h5 class="card-title">كيف تبدع فى مجالك 2</h5>
+                      <p class="card-text">
+                        هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد
+                        تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد
+                        مثل
+                      </p>
+                      <p style="font-size: 12px" class="mb-0">
+                        10 نوفمبر، 2024
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="normal-article">
+              <div class="card mb-3">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img
+                      src="images/article_2.png"
+                      class="img-fluid rounded-start"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body py-3">
+                      <p style="font-size: 12px">
+                        <img src="icons/Star.svg" class="img-fluid" />
+                        تجارة اكسسوارات الجوالات
+                      </p>
+                      <h5 class="card-title">كيف تبدع فى مجالك 2</h5>
+                      <p class="card-text">
+                        هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد
+                        تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد
+                        مثل
+                      </p>
+                      <p style="font-size: 12px" class="mb-0">
+                        10 نوفمبر، 2024
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-5">
+          <hr />
+        </div>
+      </div>
+    </section>
+
+    <!-- End Section Articles -->
+
+    <!-- Start section Articles -->
+
+    <section class="articles mb-5">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center">
+          <h4 class="my-4 main-heading">اهم المقالات</h4>
+          <div>
+            <a style="color: var(--main-color)" href="#">شاهد المزيد</a>
+            <img src="icons/showMore.svg" />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="main-article">
+              <div class="card">
+                <img
+                  src="images/article_1.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <p style="font-size: 12px">
+                    <img src="icons/Star.svg" class="img-fluid" />
+                    تجارة اكسسوارات الجوالات
+                  </p>
+                  <h4 class="card-title">كيف تبدع فى مجالك 2</h4>
+                  <p class="card-text">
+                    هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم
+                    توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل
+                    هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد
+                    الحروف التى يولدها التطبيق.
+                  </p>
+                  <p style="font-size: 12px">10 نوفمبر، 2024</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="normal-article">
+              <div class="card mb-3">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img
+                      src="images/article_2.png"
+                      class="img-fluid rounded-start"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body py-3">
+                      <p style="font-size: 12px">
+                        <img src="icons/Star.svg" class="img-fluid" />
+                        تجارة اكسسوارات الجوالات
+                      </p>
+                      <h5 class="card-title">كيف تبدع فى مجالك 2</h5>
+                      <p class="card-text">
+                        هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد
+                        تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد
+                        مثل
+                      </p>
+                      <p style="font-size: 12px" class="mb-0">
+                        10 نوفمبر، 2024
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="normal-article">
+              <div class="card mb-3">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img
+                      src="images/article_2.png"
+                      class="img-fluid rounded-start"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body py-3">
+                      <p style="font-size: 12px">
+                        <img src="icons/Star.svg" class="img-fluid" />
+                        تجارة اكسسوارات الجوالات
+                      </p>
+                      <h5 class="card-title">كيف تبدع فى مجالك 2</h5>
+                      <p class="card-text">
+                        هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد
+                        تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد
+                        مثل
+                      </p>
+                      <p style="font-size: 12px" class="mb-0">
+                        10 نوفمبر، 2024
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="normal-article">
+              <div class="card mb-3">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img
+                      src="images/article_2.png"
+                      class="img-fluid rounded-start"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body py-3">
+                      <p style="font-size: 12px">
+                        <img src="icons/Star.svg" class="img-fluid" />
+                        تجارة اكسسوارات الجوالات
+                      </p>
+                      <h5 class="card-title">كيف تبدع فى مجالك 2</h5>
+                      <p class="card-text">
+                        هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد
+                        تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد
+                        مثل
+                      </p>
+                      <p style="font-size: 12px" class="mb-0">
+                        10 نوفمبر، 2024
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-5">
+          <hr />
+        </div>
+      </div>
+    </section>
+
+    <!-- End Section Articles -->
+
+    <!-- Start section Articles -->
+
+    <section class="articles mb-5">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center">
+          <h4 class="my-4 main-heading">اهم المقالات</h4>
+          <div>
+            <a style="color: var(--main-color)" href="#">شاهد المزيد</a>
+            <img src="icons/showMore.svg" />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="main-article">
+              <div class="card">
+                <img
+                  src="images/article_1.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <p style="font-size: 12px">
+                    <img src="icons/Star.svg" class="img-fluid" />
+                    تجارة اكسسوارات الجوالات
+                  </p>
+                  <h4 class="card-title">كيف تبدع فى مجالك 2</h4>
+                  <p class="card-text">
+                    هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم
+                    توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل
+                    هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد
+                    الحروف التى يولدها التطبيق.
+                  </p>
+                  <p style="font-size: 12px">10 نوفمبر، 2024</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="normal-article">
+              <div class="card mb-3">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img
+                      src="images/article_2.png"
+                      class="img-fluid rounded-start"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body py-3">
+                      <p style="font-size: 12px">
+                        <img src="icons/Star.svg" class="img-fluid" />
+                        تجارة اكسسوارات الجوالات
+                      </p>
+                      <h5 class="card-title">كيف تبدع فى مجالك 2</h5>
+                      <p class="card-text">
+                        هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد
+                        تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد
+                        مثل
+                      </p>
+                      <p style="font-size: 12px" class="mb-0">
+                        10 نوفمبر، 2024
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="normal-article">
+              <div class="card mb-3">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img
+                      src="images/article_2.png"
+                      class="img-fluid rounded-start"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body py-3">
+                      <p style="font-size: 12px">
+                        <img src="icons/Star.svg" class="img-fluid" />
+                        تجارة اكسسوارات الجوالات
+                      </p>
+                      <h5 class="card-title">كيف تبدع فى مجالك 2</h5>
+                      <p class="card-text">
+                        هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد
+                        تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد
+                        مثل
+                      </p>
+                      <p style="font-size: 12px" class="mb-0">
+                        10 نوفمبر، 2024
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="normal-article">
+              <div class="card mb-3">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img
+                      src="images/article_2.png"
+                      class="img-fluid rounded-start"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body py-3">
+                      <p style="font-size: 12px">
+                        <img src="icons/Star.svg" class="img-fluid" />
+                        تجارة اكسسوارات الجوالات
+                      </p>
+                      <h5 class="card-title">كيف تبدع فى مجالك 2</h5>
+                      <p class="card-text">
+                        هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد
+                        تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد
+                        مثل
+                      </p>
+                      <p style="font-size: 12px" class="mb-0">
+                        10 نوفمبر، 2024
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- End Section Articles -->
+
+    <!-- Start Section Footer -->
+
+    <section class="footer">
+      <div class="container">
+        <img src="icons/logo-white.svg" />
+        <div class="row">
+          <div class="col-lg-8">
+            <div class="data mt-5">
+              <p>اشترك معنا لتكون مطلع على أحدث الإضافات</p>
+              <div class="input position-relative">
+                <input
+                  type="text"
+                  placeholder="اكتب بريدك الإلكترونى"
+                  class="rounded-5"
+                />
+                <span class="icon position-absolute">
+                  <img src="icons/arrowRight.svg" alt="" class="img-fluid" />
+                </span>
+              </div>
+              <h4 class="mt-5">محمد الجربوع</h4>
+              <ul class="list-unstyled d-flex gap-5">
+                <li>
+                  <a href="">الرئيسية</a>
+                </li>
+                <li>
+                  <a href="">نبذة عنى</a>
+                </li>
+                <li>
+                  <a href="">المقالات</a>
+                </li>
+                <li>
+                  <a href="">معرض الصور</a>
+                </li>
+                <li>
+                  <a href="">الفيديوهات</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="contact mt-5">
+              <h6 class="my-2">التواصل</h6>
+              <div class="my-2">
+                <a href="" class="mail fw-bolder fs-5">service@algarbou.com</a>
+              </div>
+              <div class="my-2">
+                <a href="" class="phone fw-bolder fs-5">+96 15 754411184</a>
+              </div>
+              <h6 class="my-4">معلومات مهمة</h6>
+              <ul class="list-unstyled d-flex gap-5">
+                <li><a href="">الشروط والأحكام</a></li>
+                <li><a href="">السياسات والشروط</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <hr />
+        <div class="copyright d-flex justify-content-between mt-5 flex-wrap">
+          <p>© حقوق الطبع والنشر محفوظة لدى محمد الجربوع</p>
+          <ul class="socials list-unstyled d-flex gap-2 justify-content-center">
+            <li class="social d-flex justify-content-center align-items-center">
+              <a href="#" class="text-white"
+                ><i class="fa-brands fa-facebook-f"></i
+              ></a>
+            </li>
+            <li class="social d-flex justify-content-center align-items-center">
+              <a href="#" class="text-white"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+            </li>
+            <li class="social d-flex justify-content-center align-items-center">
+              <a href="#" class="text-white"
+                ><i class="fa-brands fa-linkedin-in"></i
+              ></a>
+            </li>
+            <li class="social d-flex justify-content-center align-items-center">
+              <a href="#" class="text-white"
+                ><i class="fa-brands fa-behance"></i
+              ></a>
+            </li>
+            <li class="social d-flex justify-content-center align-items-center">
+              <a href="#" class="text-white"
+                ><i class="fa-brands fa-youtube"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- End Section Footer -->
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/all.min.js"></script>
+  </body>
+</html>

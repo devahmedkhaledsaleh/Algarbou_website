@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Algarbou</title>
+    <link rel="stylesheet" href="css/bootstrap.rtl.min.css" />
+
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/sign-up3.css" />
+  </head>
+  <body>
+    <!-- Start Section Sign In -->
+
+    <section class="reset-password2 text-center">
+      <div class="container">
+        <div class="logo mb-5">
+          <img src="icons/Logo.svg" alt="" />
+        </div>
+        <div class="card">
+          <div class="title">قم بكتابة الكود المرسل لك على بريدك</div>
+          <form action="" class="form">
+            <div class="row">
+              <div class="col-md-2 mb-4">
+                <div class="position-relative">
+                  <input
+                    type="text"
+                    class="custom-input form-control"
+                    placeholder="5"
+                    min="0"
+                    max="9"
+                    oninput="validateInput(this)"
+                  />
+                </div>
+              </div>
+              <div class="col-md-2 mb-4">
+                <div class="position-relative">
+                  <input
+                    type="text"
+                    class="custom-input form-control"
+                    placeholder="5"
+                    maxlength="1"
+                    oninput="validateInput(this)"
+                  />
+                </div>
+              </div>
+              <div class="col-md-2 mb-4">
+                <div class="position-relative">
+                  <input
+                    type="text"
+                    class="custom-input form-control"
+                    placeholder="5"
+                    maxlength="1"
+                    oninput="validateInput(this)"
+                  />
+                </div>
+              </div>
+              <div class="col-md-2 mb-4">
+                <div class="position-relative">
+                  <input
+                    type="text"
+                    class="custom-input form-control"
+                    placeholder="5"
+                    maxlength="1"
+                    oninput="validateInput(this)"
+                  />
+                </div>
+              </div>
+              <div class="col-md-2 mb-4">
+                <div class="position-relative">
+                  <input
+                    type="text"
+                    class="custom-input form-control"
+                    placeholder="5"
+                    maxlength="1"
+                    oninput="validateInput(this)"
+                  />
+                </div>
+              </div>
+              <div class="col-md-2 mb-4">
+                <div class="position-relative">
+                  <input
+                    type="text"
+                    class="custom-input form-control"
+                    placeholder="5"
+                    maxlength="1"
+                    oninput="validateInput(this)"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="d-flex register">
+              <span>لم يصلك الرقم السرى؟</span>
+              <a href="">إرسال مجدداً</a>
+            </div>
+            <div class="d-grid mt-2 mb-4">
+              <button class="btn d-grid login">التالي</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- End Section Sign In -->
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <!-- <script src="js/main.js"></script> -->
+
+    <script>
+      function validateInput(input) {
+        // Remove non-numeric characters
+        input.value = input.value.replace(/\D/g, "");
+
+        // Ensure the value is within the specified range (0-9)
+        if (input.value < 0) {
+          input.value = 0;
+        } else if (input.value > 9) {
+          input.value = 9;
+        }
+
+        var nextInput =
+          currentInput.parentElement.parentElement.nextElementSibling;
+        if (nextInput && nextInput.querySelector("input")) {
+          nextInput.querySelector("input").focus();
+        }
+      }
+    </script>
+  </body>
+</html>

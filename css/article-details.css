@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 2;
+}
+
+:root {
+  --foreground-rgb: #1c1b1b;
+  --main-color: #987a54;
+  --secondary-color: #ddd9d4;
+}
+
+body {
+  color: var(--secondary-color);
+  background: var(--foreground-rgb);
+  font-family: "Almarai";
+  font-size: 14px;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Start Global */
+
+.main-button {
+  padding: 15px 22px;
+  font-size: 24px;
+  font-weight: 700;
+  border-radius: 56px;
+  background-color: var(--main-color);
+  border: none;
+  color: var(--secondary-color);
+}
+
+.secondary-button {
+  border: 2px solid #987a54;
+  color: #987a54;
+  padding: 13px 18px;
+  border-radius: 58px;
+  background-color: transparent;
+}
+
+.section-title {
+  display: flex;
+  align-items: center;
+  color: var(--main-color);
+}
+
+.section-title .number {
+  font-weight: 700;
+  font-size: 64px;
+}
+
+.section-title .text {
+  font-weight: 700;
+  font-size: 42px;
+  margin-right: 20px;
+}
+
+.card {
+  background-color: #32302d;
+  color: white;
+}
+
+.main-heading {
+  color: var(--main-color);
+}
+
+/* Satrt Section Articles */
+
+.articles .main-article .card .card-body .card-text,
+.articles .normal-article .card .card-body .card-text {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  font-size: 14px;
+}
+
+.articles .normal-article img {
+  object-fit: fill;
+  height: 100%;
+}
+
+/* End Section Articles */
+
+/* Start Section Location */
+
+/* .location .main-video .image {
+    background-image: url("../images/photogallery_5.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 500px;
+    background-position: center center;
+  } */
+
+.location .main-video .image img {
+  width: 100%;
+  height: 400px;
+  object-fit: fill;
+}
+
+.location .main-video .info {
+  background-color: rgba(128, 102, 69, 0.5);
+}
+
+.location .video .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.7) 50%
+  );
+}
+
+/* End Section Location */
+
+/* Start Section Add Comment */
+
+.add-comment input,
+.add-comment textarea {
+  background-color: #32302d;
+  border: none;
+}
+
+.add-comment input::placeholder,
+.add-comment textarea::placeholder {
+  color: var(--secondary-color);
+}
+
+.add-comment textarea {
+  height: 320px;
+}
+/* End Section Add Comment */

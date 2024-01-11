@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1.7;
+}
+
+:root {
+  --main-color: #987a54;
+  --secondary-color: #ddd9d4;
+}
+
+body {
+  background-color: #1c1b1b;
+  color: var(--secondary-color);
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Start Global */
+
+.main-button {
+  padding: 15px 22px;
+  font-size: 24px;
+  font-weight: 700;
+  border-radius: 56px;
+  background-color: var(--main-color);
+  border: none;
+  color: var(--secondary-color);
+}
+
+.secondary-button {
+  border: 2px solid #987a54;
+  color: #987a54;
+  padding: 13px 18px;
+  border-radius: 58px;
+  background-color: transparent;
+}
+
+.card {
+  background-color: #32302d;
+  color: white;
+}
+
+.main-heading {
+  color: var(--main-color);
+}
+
+/* End Global */
+
+/* Start Section Landing */
+
+.landing {
+  background: linear-gradient(rgba(0, 0, 0, 0.6) 0% 100%),
+    url(../images/main_background.png);
+  background-position: center center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.landing .intro {
+  padding-top: 212px;
+}
+
+.landing .intro .welcome {
+  position: relative;
+  display: flex;
+  color: var(--main-color);
+}
+
+.landing .intro .welcome::before {
+  content: url("../icons/quoteOne.svg");
+  align-self: flex-end;
+}
+
+.landing .intro .welcome::after {
+  content: url("../icons/quoteTwo.svg");
+}
+
+.landing .intro .platform {
+  position: relative;
+}
+
+.landing .intro .platform::before {
+  content: "";
+  width: 34px;
+  height: 1px;
+  display: inline-block;
+  background-color: var(--secondary-color);
+  margin-left: 15px;
+}
+
+.landing .intro .platform::after {
+  content: "";
+  width: 34px;
+  height: 1px;
+  display: inline-block;
+  background-color: var(--secondary-color);
+  margin-right: 15px;
+}
+
+/* End Section Landing */
+
+/* Start Section Gallery */
+
+.gallery {
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+
+.item .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.7) 50%
+  );
+}
+
+.item .image img {
+  width: 100%;
+}
+
+/* End Section Gallery */
+
+/* Start Section Filter */
+
+.filter select {
+  background-color: transparent;
+  color: var(--secondary-color);
+  border-color: var(--main-color);
+  border-radius: 43px;
+  padding: 10px 50px;
+  color: var(--main-color);
+}
+
+/* End Section Filter */
